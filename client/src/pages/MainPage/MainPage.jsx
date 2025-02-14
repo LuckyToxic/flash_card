@@ -1,9 +1,7 @@
-
-
 export default function MainPage() {
   return (
     <div>
-      <p>Страница регистарции пользователя</p>
-      </div>
-  )
+      <p>Страница регистрации пользователя</p>
+    </div>
+  );
 }

@@ -1,0 +1,18 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url("https://sellfy.com/blog/wp-content/uploads/2014/12/dead-link-404.jpg")
+    center center no-repeat;
+  background-size: 85% 90%;
+  background-position: center;
+  height: 95vh;
+  color: rgb(207, 12, 12);
+  text-align: top;
+  font-size: 60px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(28, 172, 141);
+}

@@ -1,0 +1,73 @@
+/* Основной контейнер формы */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #048181, #2a5298);
+  font-family: "Arial", sans-serif;
+}
+
+/* Стили для формы */
+.form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Стили для заголовка */
+.form h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Стили для поля ввода */
+.inputField {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.inputField::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.inputField:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Стили для кнопки */
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background: #0e0a33;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #ff4a3d;
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}

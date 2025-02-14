@@ -5,8 +5,8 @@ class TopicService {
     return await Topic.findAll();
   }
 
-  static async getById(topicId) {
-    return await Topic.findByPk(topicId);
+  static async getById(id) {
+    return await Topic.findByPk(id);
   }
 }
 module.exports = TopicService;
