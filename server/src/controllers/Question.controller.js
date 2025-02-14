@@ -9,7 +9,7 @@ class QuestionController {
       if (!isValidId(id)) {
         return res.status(400).json(formatResponse(400, "Invalid topic ID"));
       }
-      const questions = await Question.findAll({ where: { topicId: id } });
+      const questions = await Question.findAll({ where: { topic_id: id } });
       if (!questions.length) {
         return res
           .status(404)

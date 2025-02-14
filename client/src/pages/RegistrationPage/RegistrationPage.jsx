@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router';
-import { UserApi } from '../../entities/UserApi';
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import { UserApi } from "../../entities/UserApi";
+import styles from "../RegistrationPage/RegistrationPage.module.css";
 
 export default function RegistrationPage() {
-  const [inputs, setInputs] = useState({ username: '', score: '' });
-  const [error, setError] = useState('');
+  const [inputs, setInputs] = useState({ username: "", score: "" });
+  const [error, setError] = useState("");
 
   const onChangeHandler = (event) => {
     setInputs((prev) => ({ ...prev, [event.target.name]: event.target.value }));
@@ -16,7 +17,7 @@ export default function RegistrationPage() {
     event.preventDefault();
 
     if (!inputs.username) {
-      alert('Введи имя, герой');
+      alert("Введи имя, герой");
       return;
     }
 
@@ -28,24 +29,34 @@ export default function RegistrationPage() {
       }
 
       if (response.statusCode === 201) {
-        setInputs({ username: '', score: '0' });
-        setError('');
+        setInputs({ username: "", score: "0" });
+        setError("");
       }
     } catch (error) {
       console.log(error);
     }
   };
   return (
-    <form onSubmit={onSubmitHandler}>
-      <input
-        name="username"
-        placeholder="введи имя"
-        value={inputs.username}
-        onChange={onChangeHandler}
-      />
+    <div className={styles.formContainer}>
+      <form className={styles.form} onSubmit={onSubmitHandler}>
+        <h2>Регистрация</h2>
+        <input
+          className={styles.inputField}
+          name="username"
+          placeholder="введи имя"
+          value={inputs.username}
+          onChange={onChangeHandler}
+        />
 
-      <button type="submit" onClick ={()=>navigate('/themes')}>Нажать</button>
-      {error && <span style={{ color: 'red' }}>{error}</span>}
-    </form>
+        <button
+          type="submit"
+          className={styles.submitButton}
+          onClick={() => navigate("/themes")}
+        >
+          Нажать
+        </button>
+        {error && <span className={styles.errorMessage}>{error}</span>}
+      </form>
+    </div>
   );
 }
