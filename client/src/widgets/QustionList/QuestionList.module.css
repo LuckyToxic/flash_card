@@ -18,9 +18,10 @@ input {
   border: 2px solid #09165e; /* Рамка яркого цвета */
   border-radius: 5px; /* Скругление углов */
   font-size: 1rem; /* Размер шрифта */
-  width: 100%; /* Ширина на весь доступный контейнер */
+  width: 90%; /* Ширина на весь доступный контейнер */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
-  transition: border-color 0.3s; /* Плавный переход цвета рамки */
+  transition: border-color 0.3s; /*Плавный переход цвета рамки*/
+  
 }
 
 input:focus {
@@ -37,6 +38,7 @@ button {
   cursor: pointer; /* Курсор при наведении */
   font-size: 1rem; /* Размер шрифта */
   transition: background-color 0.3s; /* Плавный переход цвета фона */
+  margin-top: 30px;
 }
 
 button:hover {
