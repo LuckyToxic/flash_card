@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 
 export default function QuestionList({ questions, setQuestions }) {
@@ -6,37 +7,27 @@ export default function QuestionList({ questions, setQuestions }) {
   const [score, setScore] = useState(0);
   const [answer, setAnswer] = useState('');
 
+  const navigate = useNavigate();
+
   const onChangeHandler = (event) => {
     setAnswer(event.target.value);
   };
 
   const getNextPage = () => {
     if (answer === questions[count]?.answer){setScore((score) => score + 1)}
-     
-    if (count < 4) {
-      setCount((count) => count + 1);
-    } else {
-      alert('Вопросов больше нет');
+    if(answer.trim().length !== 0){
+      if (count < 4) {
+        setCount((count) => count + 1);
+      } else {
+        alert('Вопросов больше нет');
+        (()=> navigate('/themes'))()
+      }
+      
+      setAnswer('');
     }
-
-    setAnswer('');
   };
 
   return (
-    // <div>
-    //   {questions ? (
-    //     questions.map((question) => (
-    //       <QuestionCard
-    //         key={question.id}
-    //         question={question}
-    //         setQuestions={setQuestions}
-    //       />
-    //     ))
-    //   ) : (
-    //     <>нет вопросов</>
-    //   )}
-    // </div>
-
     <>
       <div>{questions[count]?.question || 'нет вопросов'}</div>
       <input
