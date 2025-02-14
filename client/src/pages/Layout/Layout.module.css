@@ -1,0 +1,64 @@
+/* Layout.module.css */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Занимает всю высоту экрана */
+  background: linear-gradient(
+    135deg,
+    #86fde8,
+    #64dfdf,
+    #48b1bf
+  ); /* Бирюзовый градиент */
+  font-family: "Poppins", sans-serif; /* Современный шрифт */
+  color: #fff; /* Белый текст для контраста */
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
+}
+
+.nav-container {
+  /* position: relative; */
+  flex: 0 0 auto; /* Фиксированная высота */
+  height: 100%; /* Полноэкранный режим */
+  width: 100%; /* Занимает всю ширину */
+  background: linear-gradient(
+    135deg,
+    #48b1bf,
+    #64dfdf,
+    #86fde8
+  ); /* Бирюзовый градиент */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease; /* Плавный переход фона */
+}
+
+.nav-container:hover {
+  background: linear-gradient(
+    135deg,
+    #86fde8,
+    #64dfdf,
+    #48b1bf
+  ); /* Изменение градиента при наведении */
+}
+
+.content {
+  flex: 1; /* Занимает все доступное пространство */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Внутренняя тень */
+  border-radius: 10px; /* Скругленные углы */
+}
+
+.footer-placeholder {
+  height: 50px;
+  background: rgba(72, 177, 191, 0.8); /* Полупрозрачный бирюзовый фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #fff; /* Белый текст */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Легкая граница */
+}
