@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router';
 export default function QuestionList({ questions, setQuestions }) {
   const [count, setCount] = useState(0);
   const [score, setScore] = useState(0);
-  const [answer, setAnswer] = useState('');
+  const [answer, setAnswer] = useState("");
 
   const navigate = useNavigate();
 
@@ -29,7 +29,7 @@ export default function QuestionList({ questions, setQuestions }) {
 
   return (
     <>
-      <div>{questions[count]?.question || 'нет вопросов'}</div>
+      <div>{questions[count]?.question || "нет вопросов"}</div>
       <input
         name="answer"
         placeholder="введи ответ"
