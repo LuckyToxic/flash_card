@@ -9,7 +9,7 @@ class TopicController {
       if (topics.length === 0) {
         return res.status(200).json(formatResponse(200, "No topics found",[]));
       }
-      res.status(200).json(formatResponse(200,"No topics found",[]));
+      res.status(200).json(formatResponse(200,'success',topics));
     } catch (error) {
         console.error(error);
         res.status(500).json(formatResponse(500,'Internal server error',null,error))

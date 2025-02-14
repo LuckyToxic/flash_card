@@ -16,10 +16,7 @@ function App() {
           <Route path='/' element={<MainPage />} />
           <Route path='/registration' element={<RegistrationPage />} />
           <Route path='/themes' element={<ThemesPages />} />
-          <Route path='/themes/:id' element={<QuestionsPage />} />
-
-        
-
+          <Route path='/:id' element={<QuestionsPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

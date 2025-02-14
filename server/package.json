@@ -14,7 +14,7 @@
     "dbSeedUndo": "npx sequelize db:seed:undo:all",
     "dbModGen": "npx sequelize model:generate --name Test --attributes title:string",
     "dbSeedGen": "npx sequelize seed:generate --name Seed",
-    "dbReset": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed "
+    "dbReset": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all "
   },
   "keywords": [],
   "author": "",

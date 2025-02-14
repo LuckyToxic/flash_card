@@ -5,7 +5,7 @@ export default class ThemesApi {
   }
 
   static async getById(id) {
-    const response = await fetch(`'/api/topics/${id}'`);
+    const response = await fetch(`/api/topics/${id}`);
     return await response.json();
   }
 }

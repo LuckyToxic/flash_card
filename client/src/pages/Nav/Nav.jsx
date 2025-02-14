@@ -22,7 +22,7 @@ export default function Nav() {
       </NavLink>
 
       <NavLink
-        to="/input"
+        to="/"
         className={({ isActive }) => (isActive ? styles.active : "")}
       >
         Выйти
