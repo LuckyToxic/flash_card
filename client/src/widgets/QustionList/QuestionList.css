@@ -1,0 +1,50 @@
+.questionContainer {
+  margin-bottom: 30px; /* Увеличиваем отступ снизу для вопросов */
+  font-size: 1.5rem; /* Увеличиваем размер шрифта для вопросов */
+  color: #333; /* Темный цвет текста для вопросов */
+}
+
+.inputContainer {
+  margin: 30px 0; /* Увеличиваем отступы сверху и снизу для ввода */
+  padding: 15px; /* Добавляем внутренние отступы для контейнера */
+  background-color: #f9f9f9; /* Светлый фон для контейнера ввода */
+  border: 1px solid #ddd; /* Легкая рамка вокруг контейнера */
+  border-radius: 8px; /* Скругление углов контейнера */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для контейнера */
+}
+
+input {
+  padding: 10px; /* Внутренние отступы */
+  border: 2px solid #09165e; /* Рамка яркого цвета */
+  border-radius: 5px; /* Скругление углов */
+  font-size: 1rem; /* Размер шрифта */
+  width: 100%; /* Ширина на весь доступный контейнер */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+  transition: border-color 0.3s; /* Плавный переход цвета рамки */
+}
+
+input:focus {
+  outline: none; /* Убираем стандартный контур */
+  border-color: #110246; /* Цвет рамки при фокусе */
+}
+
+button {
+  background-color: #ff6f61; /* Цвет фона кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Курсор при наведении */
+  font-size: 1rem; /* Размер шрифта */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+button:hover {
+  background-color: #030452; /* Цвет фона кнопки при наведении */
+}
+
+.score {
+  margin-top: 20px; /* Отступ сверху для счета */
+  font-size: 1.2rem; /* Размер шрифта для счета */
+  color: #333; /* Темный цвет текста для счета */
+}

@@ -5,9 +5,22 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  font-size: 30px;
   padding: 0 50px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .active {
   color: #232ecc;
+  font-weight: bold; /* Жирный шрифт */
+  animation: blink 1.5s infinite; /* Мерцание */
 }
