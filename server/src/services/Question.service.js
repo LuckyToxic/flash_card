@@ -1,5 +1,4 @@
 const { Question } = require("../db/models");
-const { formatResponse } = require("../utils/formatResponse");
 
 class QuestionService {
   static async getQuestionsByTopicId(id) {

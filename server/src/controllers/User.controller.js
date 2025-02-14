@@ -3,10 +3,10 @@ const { formatResponse } = require("../utils/formatResponse");
 
 class UserController {
   static async create(req, res) {
-    const { username, score } = req.body;
+    const { username } = req.body;
 
     try {
-      const newUser = await UserService.create({ username, score });
+      const newUser = await UserService.create({ username });
       if (!newUser) {
         return res
           .status(400)
