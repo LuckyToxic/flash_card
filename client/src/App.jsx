@@ -11,14 +11,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/registration" element={<RegistrationPage />} />
-          <Route path="/themes" element={<ThemesPages />} />
-          <Route path="/questions" element={<QuestionsPage />} />
-          {/* <Route path='/tasks' element={<TasksPage />} />
-          <Route path='/test' element={<TestPage />} />
-          <Route path='/tasks/:id' element={<OneTaskPage />} /> */}
+
+        <Route path='/' element={<Layout />}>
+          <Route path='/' element={<MainPage />} />
+          <Route path='/registration' element={<RegistrationPage />} />
+          <Route path='/themes' element={<ThemesPages />} />
+          <Route path='/themes/:id' element={<QuestionsPage />} />
+
+        
+
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
