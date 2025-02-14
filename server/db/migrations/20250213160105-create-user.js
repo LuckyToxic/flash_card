@@ -13,7 +13,9 @@ module.exports = {
         type: Sequelize.STRING
       },
       score: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER ,
+        defaultValue: 0,
+        allowNull:false,
       },
       createdAt: {
         allowNull: false,
