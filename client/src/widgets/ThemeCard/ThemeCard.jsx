@@ -11,7 +11,7 @@ export default function ThemeCard({topic, setTopic}) {
 
 
     <div>
-<Link to={`/${topic.id}`}>
+<Link to={`/themes/${topic.id}`}>
 <h3>{topic.title}</h3></Link>
     </div>
   )
